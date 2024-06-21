@@ -31,7 +31,7 @@ function RegisterPage() {
       </div>
       <div className="register-image">
         {/* Replace with your image import or URL */}
-        <img src={loginandregister} alt="Signup Image" className="background-image"/>
+        <img src={loginandregister} alt="Signup " className="background-image"/>
       </div>
     </div>
   );
