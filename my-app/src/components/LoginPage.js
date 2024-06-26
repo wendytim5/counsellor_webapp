@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/LoginPage.css';
+import { Link } from 'react-router-dom';
 import loginandregister from '../images/loginandregister.png';
 
 function LoginPage() {
@@ -17,7 +18,10 @@ function LoginPage() {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required />
           </div>
+          
+          <Link to="/dashboard">
           <button type="submit" className="signup-btn">Login</button>
+        </Link>
         </form>
       </div>
       <div className="register-image">

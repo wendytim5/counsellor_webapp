@@ -25,6 +25,7 @@ function RegisterPage() {
         <div className="or-divider">
           <span>or</span>
 
+
         </div>
         <p>Have an account already? <a href="/login">Sign in</a></p>
         </form>
