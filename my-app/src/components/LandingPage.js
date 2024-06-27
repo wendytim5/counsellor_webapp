@@ -16,6 +16,7 @@ function LandingPage() {
         </div>
         <div className="main-right">
           <img src={background} alt="Mental Health" className="background-image" />
+          
         </div>
       </main>
       <Footer />

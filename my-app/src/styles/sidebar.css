@@ -8,7 +8,7 @@
   top: 0;
   left: -200px; /* Start hidden off-screen */
   transition: left 0.3s ease;
-  border:2px solid white;
+  border:0.001px solid #C0C0C0;
 }
 
 .sidebar.open {

@@ -2,8 +2,12 @@
     display: flex;
     flex: 1;
     padding: 20px;
+    background-color: #D7F5DC;
   }
   
+  .landing-page{
+    background-color: #D7F5DC;
+  }
   
   .main-left,h2 {
     font-size: 50px;
@@ -36,6 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
   .main-right img {

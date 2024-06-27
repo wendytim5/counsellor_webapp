@@ -3,6 +3,9 @@ import React from 'react';
 import '../styles/dashboard.css';
 import Header from '../components/dashboard_header';
 import Sidebar from '../components/sidebar';
+import Frame from '../images/Frame.png';
+import Rectangle from '../images/Rectangle.png';
+
 
 const Dashboard = () => {
   return (
@@ -10,10 +13,16 @@ const Dashboard = () => {
       <Header />
       <Sidebar />
       <main className="App-main">
-        <h1 className="welcome-message">Welcome to another day</h1>
-        <button className="create-button">Create New Student</button>
-        <img className="center-image" src="path_to_your_image.jpg" alt="Centered" />
+        <div class="welcome-message">
+        <span className="black-text">Welcome to </span>
+        <span className="green-text">another</span>
+        <br />
+        <span className="green-text">beautiful day!</span>
+        </div>
       </main>
+      <img src={Frame} alt="Mental Health" className="center-image" />
+      <button className="create-button">Create New Student</button>
+      <img src={Rectangle} alt="Mental Health" className="background-image" />
     </div>
   );
 };
