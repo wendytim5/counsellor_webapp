@@ -35,6 +35,8 @@ function RegisterPage() {
         <img src={loginandregister} alt="Signup " className="background-image"/>
       </div>
     </div>
+    
+    
   );
 }
 

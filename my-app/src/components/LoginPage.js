@@ -24,9 +24,9 @@ function LoginPage() {
         </Link>
         </form>
       </div>
-      <div className="register-image">
-        {/* Replace with your image import or URL */}
-        <img src={loginandregister} alt="Signup Image" className="background-image"/>
+      <div className="register-i">
+       
+        <img src={loginandregister} alt="Signup Image" className="background-i"/>
       </div>
     </div>
   );

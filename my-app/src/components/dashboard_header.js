@@ -1,16 +1,34 @@
 // src/components/Header.js
 import React from 'react';
 import '../styles/dashboard_header.css';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
-    <header className="header-container">
-      <div className="header-title">Mental Health</div>
-      <div className="profile">
-        
-        User Profile</div>
-      <div className="features">Features</div>
-      <button className="sign-out-button">Sign Out</button>
+    <header className="App-header">
+      <div className="header-left">
+        <h1 className="app-title">
+          <span className="mental-health">MentalHealth</span> <span className="app">App</span>
+        </h1>
+      </div>
+      <nav className="header-right">
+        <Link to="#services">User Profile
+        <FontAwesomeIcon icon={faCaretDown} className="dropdown-icon" />
+        </Link>
+        <Link to="#about">About Us
+        <FontAwesomeIcon icon={faCaretDown} className="dropdown-icon" />
+        </Link>
+        <Link to="#contact">Contact Us
+        <FontAwesomeIcon icon={faCaretDown} className="dropdown-icon" />
+        </Link>
+        <Link to="/login">
+          <button className="singout-btn">Signout
+          <FontAwesomeIcon icon={faArrowRight} className="dropdown-icon" />
+          </button>
+        </Link>
+      </nav>
     </header>
   );
 };

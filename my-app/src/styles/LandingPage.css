@@ -1,12 +1,18 @@
-.App-main {
-    display: flex;
-    flex: 1;
-    padding: 20px;
+
+html, body, .landing-p{
+  background-color: #D7F5DC;
+  height:100vh;
+}
+
+.content-container {
+  display: flex; /* Create a two-column layout */
+  flex: 1;
+  padding: 20px;
+  background-color: #D7F5DC;
+}
+  .landing-p{
     background-color: #D7F5DC;
-  }
-  
-  .landing-page{
-    background-color: #D7F5DC;
+    height:100vh;
   }
   
   .main-left,h2 {
@@ -28,22 +34,19 @@
     font-family:Poppins;
   }
 
-  .background-image {
-    width: 80%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    /* Add other styles as needed */
-  }
   
   
   .main-right {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
+    margin-right:0px;
     
   }
   
   .main-right img {
-    max-width: 100%;
+    min-width: 80px;
     height: auto;
+    margin-left:20px;
   }  

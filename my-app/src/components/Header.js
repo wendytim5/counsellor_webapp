@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
+
 function Header() {
   return (
-    <header className="App-header">
+    <header className="App-h">
       <div className="header-left">
         <h1 className="app-title">
-          <span className="mental-health">MentalHealth</span> <span className="app">App</span>
+          <span className="mental-h">MentalHealth</span> <span className="app">App</span>
         </h1>
       </div>
       <nav className="header-right">

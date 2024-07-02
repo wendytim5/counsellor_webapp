@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Example font import */
-.App-header {
+.App-h {
   background-color: #D7F5DC;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-.mental-health {
+.mental-h {
   color: #F55F1D;
   font-weight: bold;
   display: inline;

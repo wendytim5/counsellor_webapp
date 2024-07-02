@@ -27,31 +27,40 @@
   z-index: 1000;
 }
 
+.left{
+  margin-top: 90px;
+}
+
 .sidebar-section {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .sidebar-section-title {
-  top:40px;
+  top: 10px;
   font-size: 16px;
-  font-weight: bold;
+  display:left;
+  font-weight: normal;
   color: black;
   margin-bottom: 10px;
+  margin-left: -150px;
+  margin-top: 40px;
 }
 
-.sidebar-item {
+.sidebar-it {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 12px 0;
   color: black;
   text-decoration: none;
+  font-weight: normal;
 }
 
-.sidebar-item:hover {
-  background-color: #444;
+.sidebar-it:hover {
+  background-color: #DCDCDC;
 }
 
 .sidebar-icon {
   margin-right: 10px;
+  font-weight: normal;
 }
  

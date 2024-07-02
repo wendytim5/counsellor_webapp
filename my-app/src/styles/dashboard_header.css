@@ -1,34 +1,68 @@
-/* src/styles/Header.css */
-.header-container {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Example font import */
+.App-header {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 12px;
-  background-color: white;
-  color: black;
+  padding: 1rem;
 }
 
-.header-title {
+.app-title {
+  margin: 0;
+}
+
+.mental-health {
+  color:  #4CAF4F;
   font-weight: bold;
-  padding: 20px 40px;
+  display: inline;
+  font-size: 20px;
+  font-family:Poppins;
+  margin-left:40px;
 }
 
-.sign-out-button {
+.app {
+  color: black;
+  display: inline;
+  font-weight: bold;
+  font-size: 20px;
+  font-family:Poppins;
+}
+
+.header-right a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
+  background: none;
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
+  font-family:Poppins;
+  padding:19px 19px;
+}
+
+
+.singout-btn {
+  padding: 0.5rem 1rem;
+  border:2px solid #20B15A;
+  background-color: #20B15A; /* Green background for login button */
+  color: white; /* Black text for login button */
+}
+
+.register-btn {
+  padding: 0.5rem 1rem;
   background-color: #20B15A; /* Green background for register button */
   color: white; /* White text for register button */
   border: 2px solid #20B15A; 
 }
 
-.profile, .features {
-  font-weight: bold;
-
+.login-btn:hover{
+  background-color: #20B15A; /* Darker green on hover */
+}
+.register-btn:hover {
+  background-color: green; /* Darker green on hover */
 }
 
-/* Optional: to ensure the profile and features stay together */
-.features {
-  margin-left: 600px; 
+.dropdown-icon{
+  font-weight: normal;
+  margin-left:5px;
 }
