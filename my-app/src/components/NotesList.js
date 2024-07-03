@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Notes.css';
 
 function NoteList({ notes, editNote, deleteNote }) {
   const [editIndex, setEditIndex] = useState(-1);
@@ -20,7 +21,7 @@ function NoteList({ notes, editNote, deleteNote }) {
         <div key={index} className="note">
           {editIndex === index ? (
             <>
-              <input
+              <textarea
                 type="text"
                 value={editedNote}
                 onChange={(e) => setEditedNote(e.target.value)}

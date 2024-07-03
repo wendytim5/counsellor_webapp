@@ -5,11 +5,11 @@ import loginandregister from '../images/loginandregister.png';
 
 function LoginPage() {
   return (
-    <div className="register-page">
-      <div className="register-content">
+    <div className="login-page">
+      <div className="login-content">
         <h2>Welcome Back!</h2>
         <h3>Enter your credentials to get started</h3>
-        <form>
+        <form className="login-form">
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
             <input type="email" id="email" name="email" placeholder="Enter your email address" required />
@@ -24,8 +24,7 @@ function LoginPage() {
         </Link>
         </form>
       </div>
-      <div className="register-i">
-       
+      <div className="login-i">      
         <img src={loginandregister} alt="Signup Image" className="background-i"/>
       </div>
     </div>

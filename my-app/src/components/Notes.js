@@ -3,6 +3,8 @@ import NoteInput from './NotesInput';
 import NoteList from './NotesList';
 import Header from './dashboard_header';
 import Sidebar from './sidebar';
+import '../styles/Notes.css';
+
 
 function Notes() {
   const [notes, setNotes] = useState([]);
@@ -27,9 +29,9 @@ function Notes() {
     <div className="Notes">
     <Header/>
     <Sidebar/>
-      <h1>Note Taking App</h1>
-      <NoteInput addNote={addNote} />
+      <h1>Counselling Session</h1>
       <NoteList notes={notes} editNote={editNote} deleteNote={deleteNote} />
+      <NoteInput addNote={addNote} />
     </div>
   );
 }

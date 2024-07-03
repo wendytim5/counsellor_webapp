@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import '../styles/Notes.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 function NoteInput({ addNote }) {
   const [input, setInput] = useState('');
@@ -12,14 +15,17 @@ function NoteInput({ addNote }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
+    <form onSubmit={handleSubmit} className="Notesform">
+      <textarea
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Enter your note..."
+        placeholder="Message Falcon..."
+        
       />
-      <button type="submit">Add Note</button>
+      <button type="submit" >
+        <FontAwesomeIcon icon={faArrowUp} />
+      </button>
+
     </form>
   );
 }

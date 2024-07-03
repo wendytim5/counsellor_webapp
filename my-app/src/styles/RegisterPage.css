@@ -16,7 +16,7 @@
   background-color: #f5f5f5;
 }
 
-form {
+.register-content form {
   max-width: 400px; /* Adjust form width as needed */
   width: 100%;
   padding: 35px;
@@ -34,14 +34,14 @@ form {
   font-size:32;
 }
 
-.form-group {
+.register-group {
   margin-bottom: 1rem;
   text-align: left;
   font-family:Poppins;
   font-size:14;
 }
 
-.form-group label {
+.register-group label {
   display: block;
   margin-bottom: 0.5rem;
   color: #333;
@@ -49,7 +49,7 @@ form {
   font-size:14;
 }
 
-.form-group input {
+.register-group input {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -59,7 +59,7 @@ form {
   font-size:14;
 }
 
-.signup-btn {
+.register-signup-btn {
   width: 100%;
   padding: 0.75rem;
   margin-top: 1rem;
@@ -73,7 +73,7 @@ form {
   font-size:14;
 }
 
-.signup-btn:hover {
+.register-signup-btn:hover {
   background-color: darkgreen;
 }
 

@@ -1,80 +1,117 @@
+/* General styles for the app */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color:white;
+}
+
 .Notes {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+  width:100%
+}
+
+/* Styles for the note-taking section */
+.note-taking-section {
+  margin-left: 220px;
+  padding: 2em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1em;
+}
+
+.note {
+  background-color: #E0E0E0;
+  margin-left:250px;
+  margin-right:100px;
+  padding: 0.2em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  width: auto; /* Allow width to adjust based on content */
+}
+
+.note span, .note textarea {
+  flex: 1;
+  margin-right: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+  text-align: justify; /* Ensure the text is justified */
+  min-height: 0.2em; /* Set a minimum height */
+  height: auto; /* Allow height to adjust based on content */
+}
+.note input {
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.note button {
+  margin-left: 0.5em;
+}
+
+
+.Notesform{
+    margin-left:200px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 50px;
     justify-content: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  }
+    align-items: center;
+    background-color:#F5F5F5;
+    padding: 1em;
+    min-height: 50px; /* Set a default height */
+    border: 2px solid #ccc;
+    width: 700px; /* Optionally set a maximum width */
+    margin: 0 auto 20px auto; /* Center the form and add bottom margin */
   
-  .chat-container {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    max-width: 100%;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+}
+
+form textarea {
+  flex: 1;
+  padding: 0.5em;
+  border-radius: 5px;
+  resize: none; /* Prevent the user from resizing the textarea */
+  min-height: 50px; /* Set a default height */
+  border-radius: 50px;
+  text-align:left;
+  background-color:#F5F5F5;
   
-  .chat-messages {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
+}
+
+form button {
+  padding: 0.5em 1em;
+  background-color: #F5F5F5;
+  color: #B8B8B8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom:30px;
+ 
+}
+
+.notes button{
+  margin-bottom:5px;
+}
+
+form button:hover {
+  background-color: #F5F5F5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .note-taking-section {
+    padding: 1em;
   }
-  
-  .message {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    max-width: 80%;
-  }
-  
-  .user-message {
-    align-self: flex-end;
-    background-color: #dcf8c6;
-  }
-  
-  .bot-message {
-    align-self: flex-start;
-    background-color: #e0e0e0;
-  }
-  
-  .message-content {
-    word-wrap: break-word;
-  }
-  
-  .input-container {
-    display: flex;
-    padding: 10px;
-    background-color: #f0f0f0;
-    
-  }
-  
-  .input-container input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    margin-right: 10px;
-    font-size: 14px;
-  }
-  
-  .input-container button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .input-container button:hover {
-    background-color: #0056b3;
-  }
-  
+}
