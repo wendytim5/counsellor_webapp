@@ -23,18 +23,31 @@ const StudentProfileForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3004/register', formData);
+      const response = await axios.post('https://congenial-telegram-qj9jxrggxjph9rr9-5001.app.github.dev/api/users', formData);
       console.log('User created:', response.data);
       setSuccessMessage('User created successfully!');
 
-      // Refresh the page after a short delay
-      setTimeout(() => {
+       // Refresh the page after a short delay
+       setTimeout(() => {
         window.location.reload();
-      }, 2000);
+      }, 1000); // Delay in milliseconds (1 second)
+  
+   
     } catch (err) {
+      if (err.response) {
+        // Server responded with a status other than 200 range
+        console.error('Error response:', err.response.data);
+      } else if (err.request) {
+        // Request was made but no response received
+        console.error('Error request:', err.request);
+      } else {
+        // Something else happened
+        console.error('Error message:', err.message);
+      }
       console.error('Error creating user:', err);
     }
   };
+  
 
   return (
     <div className="dashboard">
@@ -91,5 +104,4 @@ const StudentProfileForm = () => {
     </div>
   );
 };
-
 export default StudentProfileForm;
