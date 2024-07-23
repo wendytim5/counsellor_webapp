@@ -1,0 +1,75 @@
+/* src/styles/Dashboard.css */
+html, body, .dashboard {
+  background-color: white;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  background-color: white;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-message {
+  display: flex; /* Create a two-column layout */
+  flex: 1;
+  padding: 20px;
+  margin-left: 80px;
+}
+
+
+
+.black-text {
+  color: black;
+  font-size:50px;
+  font-weight:bold;
+}
+
+.green-text {
+  color: #4CAF4F;
+  font-size:50px;
+  font-weight:bold;
+}
+
+.center-image {
+  display: flex; /* Create a two-column layout */
+  flex: 1;
+  padding: 20px;
+  width: 28%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 200px;
+
+}
+h3{
+  font-weight:normal;
+}
+.create-button {
+  margin: 20px auto;
+  margin-left:180px;
+  padding: 26px 30px;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #4CAF4F;
+  text-decoration: none; /* Remove the underline */
+  border-radius: 10px; /* Adjust border-radius to make rounded corners */
+}
+
+.create-button:hover {
+  background-color: #20B15A;
+}
+
+
+.background-image{
+  position: fixed;
+  top: 100px; /* Adjust top positioning as needed */
+  right: 100px; /* Position the image at the far right */
+  width:35%; 
+  bottom:80px;
+}

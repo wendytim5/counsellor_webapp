@@ -1,0 +1,40 @@
+.dashboard-container {
+    justify-content: space-around; /* Distribute items evenly */
+    margin-top: 20px; /* Add some top margin */
+    margin-left: 250px; /* Centers the table horizontally */
+    background-color: white;
+  }
+  
+  .dashboard-item {
+    background-color: #D3F1EF; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 28px;
+    width:900px;
+    text-align: left;
+    color:#15A196;
+    margin-right:60px;
+    cursor: pointer; /* Simulate clickable appearance */
+    box-shadow: 0 2px 4px cadetblue; /* Subtle shadow effect */
+    text-decoration: none;
+    
+  }
+  
+  .dashboard-item h3 {
+    margin-top: 5px; /* Add some space between icon and text */
+  }
+
+  .sidebar-item{
+    color:#15A196;
+    text-decoration: none;
+  }
+
+  .dashboard-item :hover{
+    color:green;
+    text-decoration: none;
+  }
+  
+  .material-icons {
+    font-size: 36px; /* Adjust icon size as desired */
+    color: #15A196;/* Gray icon color */
+  }
+  

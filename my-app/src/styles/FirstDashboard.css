@@ -1,0 +1,39 @@
+/* src/styles/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f0f0f0;
+  }
+  
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between buttons */
+  }
+  
+  .button-label {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .dashboard-button {
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #20B15A; /* Green background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-button:hover {
+    background-color: #1a9c50;
+  }
+  
