@@ -16,13 +16,13 @@
     An intuitive CV builder for Ashesi University students
     <br />
     <br />
-    <a href="https://github.com/chinweibegbu/ashesi-cv-builder">Explore Docs</a>
+    <a href="https://github.com/wendytim5/counsellor_webapp.git">Explore Docs</a>
     .
 <!--     <a href="https://www.youtube.com/channel/UCRWhX1g2ADZKLWMflBtVNxQ">View Demo</a>
     · -->
-    <a href="https://github.com/chinweibegbu/ashesi-cv-builder/issues">Report Bug</a>
+    <a href="https://github.com/wendytim5/counsellor_webapp.git/issues">Report Bug</a>
     ·
-    <a href="https://github.com/chinweibegbu/ashesi-cv-builder/issues">Request Feature</a>
+    <a href="https://github.com/wendytim5/counsellor_webapp.git/issues">Request Feature</a>
   </p>  
 </div>
 
@@ -61,19 +61,18 @@
 [![Product Name Screen Shot][product-screenshot]](https://chinwe-ibegbu-portfolio.onrender.com/)
 
 #### Idea
-Ashesi-specific CV builder to stop combatting the error-prone MS Word template file
+A web application is used to store student information and help to assess students' mental health.
 
-#### Industry Comparison
-Existing Services: [Flow CV](https://flowcv.com/), [Zety](https://zety.com/), [Resume.io](https://resume.io/), [cvmaker](https://cvmkr.com/)
+
 
 Discoveries and Observations:
-* Often encourages the inclusion of a professional summary, which Ashesi does not give space for in its template
-* Live CV preview is a common feature
-* Most only allow entry of one phone number
-* Most allow the addition of links such as GitHub, LinkedIn, etc. 
+* The counselor in Ashesi does not have an app where the counselor can store student information and history.
+* Often, the counselor would have to write down student information in the notebook and sometimes misplace the notes.
+* Most allow the counselor to register and login
+* Most allow the addition of student information
 
 #### UI Design
-Figma file: https://www.figma.com/file/pk2nLD0cpkspC1QRtvEoIO/CV-Builder?type=design&node-id=0%3A1&mode=design&t=fN2sGtXDXIk357ZB-1
+Figma file:  https://www.figma.com/design/rl3RKTUTxP0GNYaIRwGu33/Untitled?node-id=0-1&m=dev
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,9 +85,8 @@ Figma file: https://www.figma.com/file/pk2nLD0cpkspC1QRtvEoIO/CV-Builder?type=de
 * [![Node][Node]][Node-url]
 * [![React][React.js]][React-url]
 * [![Express][Express.js]][Express-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
-* [![Render][Render]][Render-url]
+* [![Mongo DB][Mongo DB]][Mongo DB]
+* [![OPEN AI][OPEN AI]][OPEN AI]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,7 +94,7 @@ Figma file: https://www.figma.com/file/pk2nLD0cpkspC1QRtvEoIO/CV-Builder?type=de
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running, follow these simple steps.
+To get a local copy up and running, follow these simple steps. The code was built using GitHub codespace as the virtual environment. Make sure to make the ports public.
 
 ### Prerequisites
 
@@ -107,7 +105,7 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/chinweibegbu/ashesi-cv-builder.git
+   https://github.com/wendytim5/counsellor_webapp.git
    ```
 3. Install NPM packages
    ```sh
@@ -132,7 +130,7 @@ If you have a suggestion that would make this better, follow these steps:
 4. Push to the Branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
-Alternatively, you can open an [Issue](https://github.com/chinweibegbu/ashesi-cv-builder/issues).
+Alternatively, you can open an [Issue](https://github.com/wendytim5/counsellor_webapp.git).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,57 +140,36 @@ Alternatively, you can open an [Issue](https://github.com/chinweibegbu/ashesi-cv
 
 #### Landing Page
 - [x] Sign in
-- [x] Sign up
+- [x] register
 
 #### Homepage
-- [x] View all created CVs
-- [x] Create new CV
-- [x] Edit existing CV
+- [x] Create a student profile
+  - [x] First Name
+  - [x] Last Name
+  - [x] Email
+  - [x] Country 
+- [x] Sidebar
+  - [x] View Students
+  - [x] Dashboard
 
-#### Create New CV Page
-- [x] Live CV preview 
-- [x] Add details to profile:
-  - [x] Full name
-  - [x] Current city and country
-  - [x] Phone number
-  - [x] Email address
-  - [x] Nationality
-  - [x] LinkedIn
-  - [ ] Any other websites (e.g. GitHub, WordPress, personal website, etc.)
-- [ ] Add details to sections:
-  - [x] Education
-    - [x] Name of institution
-    - [x] Degree
-    - [x] Name of degree
-    - [x] Location (City, Country)
-    - [x] Start and end dates
-    - [x] Cumulative GPA*
-  - [x] Achievements/Awards
-    - [x] Achievement/Award name
-    - [x] Associated institution
-    - [x] Date acquired (one-time)/Start and end dates (continuous)
-  - [x] Work Experience
-    - [x] Name of institution
-    - [x] Location of company
-    - [x] Position
-    - [x] Start and end dates
-    - [x] Description
-  - [x] Skills
-    - [x] Soft skills
-    - [x] Hard skills
-  - [ ] References
-  - [ ] Projects/Research*
-  - [ ] Co-curricular*
-  - [ ] Interests*
-  - [ ] Publications*
-- [ ] Definitions of terms
-- [x] Download CV
-- [ ] Get link to CV
-- [ ] Email CV to user
+
+#### View Student
+- [x] List of students:
+  - [x] StudentID
+  - [X] First Name
+  - [x] Last Name
+  - [x] Email
+  - [x] Country
+     
+### Student Profile (Click on student ID)    
+- [x] Notes about student
+  - [x] Notes List (contains notes placed by the counselor)
+  - [x] Note input (Connecting to ChatGPT 3.5 to assess the notes placed by the counselor)
+  
       
 \* - optional fields
 
-See the [open issues](https://github.com/chinweibegbu/ashesi-cv-builder/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/wendytim5/counsellor_webapp.git/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,9 +177,9 @@ See the [open issues](https://github.com/chinweibegbu/ashesi-cv-builder/issues) 
 <!-- CONTACT -->
 ## Contact
 
-Chinwe Ibegbu - chinwe.ibegbu@gmail.com
+Wendy Gamvah - wendy.gamvah@gmail.com
 
-Project Link: [https://github.com/chinweibegbu/ashesi-cv-builder/](https://github.com/chinweibegbu/ashesi-cv-builder/)
+Project Link: [https://github.com/wendytim5/counsellor_webapp.git/](https://github.com/wendytim5/counsellor_webapp.git/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,8 +188,7 @@ Project Link: [https://github.com/chinweibegbu/ashesi-cv-builder/](https://githu
 ## Acknowledgments
 
 * [README.md template by Drew Othneil](https://github.com/othneildrew/Best-README-Template)
-* [Awesome Badges by Vedant Chainani](https://dev.to/envoy_/150-badges-for-github-pnk)
-* [Markdown Badges by Ileriayo Adebiyi](https://github.com/Ileriayo/markdown-badges)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,22 +196,11 @@ Project Link: [https://github.com/chinweibegbu/ashesi-cv-builder/](https://githu
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
-[contributors-url]: https://github.com/chinweibegbu/ashesi-cv-builder/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
-[forks-url]: https://github.com/chinweibegbu/ashesi-cv-builder/network/members
-[stars-shield]: https://img.shields.io/github/stars/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
-[stars-url]: https://github.com/chinweibegbu/ashesi-cv-builder/stargazers
-[issues-shield]: https://img.shields.io/github/issues/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
-[issues-url]: https://github.com/chinweibegbu/ashesi-cv-builder/issues
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/chinwe-ibegbu
+[issues-url]: https://github.com/wendytim5/counsellor_webapp.git/issues
+[linkedin-url]: https://www.linkedin.com/in/wendy-pasiah/
 [product-screenshot]: images/screenshot.png
 
-[HTML]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
-[HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
-[CSS]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
-[CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+
 [JavaScript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [JavaScript-url]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
 [Node]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
@@ -244,9 +209,3 @@ Project Link: [https://github.com/chinweibegbu/ashesi-cv-builder/](https://githu
 [React-url]: https://reactjs.org/
 [Express.js]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white
 [Express-url]: https://expressjs.com/
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
-[PostgreSQL-url]: https://www.postgresql.org/
-[Render]: https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white
-[Render-url]: https://render.com/
