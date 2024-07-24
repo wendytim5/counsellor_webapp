@@ -59,7 +59,7 @@
 
 ### Overview
 
-[carenest-screenshot]: carenest.png
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 #### Idea
 A web application is used to store student information and help to assess students' mental health.
@@ -207,7 +207,7 @@ Project Link: [https://github.com/wendytim5/counsellor_webapp.git/](https://gith
 [issues-url]: https://github.com/wendytim5/counsellor_webapp.git/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/wendy-pasiah/
-[carenest-screenshot]: carenest.png
+[product-screenshot]: carenest.png
 
 
 [JavaScript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
