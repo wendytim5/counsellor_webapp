@@ -139,8 +139,8 @@ Alternatively, you can open an [Issue](https://github.com/wendytim5/counsellor_w
 ## Features
 
 #### Landing Page
-- [x] Sign in
-- [x] register
+- [x] Login
+- [x] Register
 
 #### Homepage
 - [x] Create a student profile
