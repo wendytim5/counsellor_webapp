@@ -163,8 +163,8 @@ Alternatively, you can open an [Issue](https://github.com/wendytim5/counsellor_w
      
 #### Student Session (Click on student ID)    
 - [x] Notes about student
-  - [x] Notes List (Displ placed by the counselor)
-  - [x] Note input (Connecting to ChatGPT 3.5 to assess the notes placed by the counselor)
+  - [x] Notes List (Display notes inputted by the counselor)
+  - [x] Note input ( an input box Connecting to ChatGPT 3.5 to assess the notes placed by the counselor)
 - [x] Objective Assessments (Contains links for mental health assessment (to be built))
 - [x] View Student Profile
       
