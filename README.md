@@ -17,13 +17,13 @@
     An intelligent Web Application for Mental Health Assessment
     <br />
     <br />
-    <a href="https://github.com/wendytim5/counsellor_webapp.git">Explore Docs</a>
+    <a href="https://github.com/wendytim5/counsellor_webapp">Explore Docs</a>
     .
 <!--     <a href="https://www.youtube.com/channel/UCRWhX1g2ADZKLWMflBtVNxQ">View Demo</a>
     · -->
-    <a href="https://github.com/wendytim5/counsellor_webapp.git/issues">Report Bug</a>
+    <a href="https://github.com/wendytim5/counsellor_webapp/issues">Report Bug</a>
     ·
-    <a href="https://github.com/wendytim5/counsellor_webapp.git/issues">Request Feature</a>
+    <a href="https://github.com/wendytim5/counsellor_webapp/issues">Request Feature</a>
   </p>  
 </div>
 
