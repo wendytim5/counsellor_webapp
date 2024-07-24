@@ -59,7 +59,7 @@
 
 ### Overview
 
-[![Carenest Screen Shot][[carenest-screenshot]]](https://chinwe-ibegbu-portfolio.onrender.com/)
+[carenest-screenshot]: carenest.png
 
 #### Idea
 A web application is used to store student information and help to assess students' mental health.
