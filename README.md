@@ -220,5 +220,5 @@ Project Link: [https://github.com/wendytim5/counsellor_webapp.git/](https://gith
 [Express-url]: https://expressjs.com/
 [Mongodb]: https://img.shields.io/badge/mongodb-20232A?style=for-the-badge&logo=mongodb&logoColor=61DAFB
 [Mongodb-url]: https://mongodb.org/
-[openai]: https://img.shields.io/badge/OPEN AI-20232A?style=for-the-badge&logo=openai&logoColor=61DAFB
+[openai]: https://img.shields.io/badge/openai-20232A?style=for-the-badge&logo=openai&logoColor=61DAFB
 [openai-url]: https://openai.com/
