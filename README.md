@@ -2,6 +2,10 @@
 
 
 <!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -202,7 +206,7 @@ Project Link: [https://github.com/wendytim5/counsellor_webapp.git/](https://gith
 [issues-url]: https://github.com/chinweibegbu/ashesi-cv-builder/issues
 [issues-url]: https://github.com/wendytim5/counsellor_webapp.git/issues
 [linkedin-url]: https://www.linkedin.com/in/wendy-pasiah/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/carenest.png
 
 
 [JavaScript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
