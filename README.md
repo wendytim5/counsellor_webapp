@@ -218,7 +218,7 @@ Project Link: [https://github.com/wendytim5/counsellor_webapp.git/](https://gith
 [React-url]: https://reactjs.org/
 [Express.js]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white
 [Express-url]: https://expressjs.com/
-[Mongodb]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=mongodb&logoColor=61DAFB
+[Mongodb]: https://img.shields.io/badge/mongodb-20232A?style=for-the-badge&logo=mongodb&logoColor=61DAFB
 [Mongodb-url]: https://mongodb.org/
-[openai]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=openai&logoColor=61DAFB
+[openai]: https://img.shields.io/badge/openai-20232A?style=for-the-badge&logo=openai&logoColor=61DAFB
 [openai-url]: https://openai.org/
