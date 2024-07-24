@@ -62,15 +62,16 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 #### Idea
-A web application is used to store student information and help to assess students' mental health.
+A web application that stores student information and gives personalized mental health assessments for each student. The Application stores students' mental health history and uses prompt engineering to assess notes about the student inputted by the counselor, giving feedback about the student's mental health condition. The application contains the endpoint for ChatGPT 3.5. Chat GPT 3.5 uses student information in the database to assess student mental health and the current notes inputted by the counselor to give feedback about the student's mental health.
 
 
 
 Discoveries and Observations:
 * The counselor in Ashesi does not have an app where the counselor can store student information and history.
 * Often, the counselor would have to write down student information in the notebook and sometimes misplace the notes.
-* Most allow the counselor to register and login
-* Most allow the addition of student information
+* Most allow the counselor to register and login.
+* Counselor often forget to use student prior mental health history to give mental health assessment.
+* Most allow the creation of student information.
 
 #### UI Design
 Figma file:  https://www.figma.com/design/rl3RKTUTxP0GNYaIRwGu33/Untitled?node-id=0-1&m=dev
@@ -161,11 +162,12 @@ Alternatively, you can open an [Issue](https://github.com/wendytim5/counsellor_w
   - [x] Email
   - [x] Country
      
-#### Student Profile (Click on student ID)    
+#### Student Session (Click on student ID)    
 - [x] Notes about student
-  - [x] Notes List (contains notes placed by the counselor)
+  - [x] Notes List (Displ placed by the counselor)
   - [x] Note input (Connecting to ChatGPT 3.5 to assess the notes placed by the counselor)
-  
+- [x] Objective Assessments (Contains links for mental health assessment (to be built))
+- [x] View Student Profile
       
 \* - optional fields
 
