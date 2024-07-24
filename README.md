@@ -196,14 +196,14 @@ Project Link: [https://github.com/wendytim5/counsellor_webapp.git/](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
-[contributors-url]: https://github.com/chinweibegbu/ashesi-cv-builder/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
-[forks-url]: https://github.com/chinweibegbu/ashesi-cv-builder/network/members
-[stars-shield]: https://img.shields.io/github/stars/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
-[stars-url]: https://github.com/chinweibegbu/ashesi-cv-builder/stargazers
-[issues-shield]: https://img.shields.io/github/issues/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
-[issues-url]: https://github.com/chinweibegbu/ashesi-cv-builder/issues
+[contributors-shield]: https://img.shields.io/github/contributors/wendytim5/counsellor_webapp.svg?style=for-the-badge
+[contributors-url]: https://github.com/wendytim5/counsellor_webapp/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/wendytim5/counsellor_webapp.svg?style=for-the-badge
+[forks-url]: https://github.com/wendytim5/counsellor_webapp/network/members
+[stars-shield]: https://img.shields.io/github/stars/wendytim5/counsellor_webapp.svg?style=for-the-badge
+[stars-url]: https://github.com/wendytim5/counsellor_webapp/stargazers
+[issues-shield]: https://img.shields.io/github/issues/wendytim5/counsellor_webapp.svg?style=for-the-badge
+[issues-url]: https://github.com/wendytim5/counsellor_webapp/issues
 [issues-url]: https://github.com/wendytim5/counsellor_webapp.git/issues
 [linkedin-url]: https://www.linkedin.com/in/wendy-pasiah/
 [product-screenshot]: images/carenest.png
