@@ -188,6 +188,10 @@ Project Link: [https://github.com/wendytim5/counsellor_webapp.git/](https://gith
 ## Acknowledgments
 
 * [README.md template by Drew Othneil](https://github.com/othneildrew/Best-README-Template)
+* [Awesome Badges by Vedant Chainani](https://dev.to/envoy_/150-badges-for-github-pnk)
+* [Markdown Badges by Ileriayo Adebiyi](https://github.com/Ileriayo/markdown-badges)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
