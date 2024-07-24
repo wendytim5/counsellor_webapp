@@ -62,7 +62,7 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 #### Idea
-A web application that stores student information and gives personalized mental health assessments for each student. The Application stores students' mental health history and uses prompt engineering to assess notes about the student inputted by the counselor, giving feedback about the student's mental health condition. The application contains the endpoint for ChatGPT 3.5. Chat GPT 3.5 uses student information in the database to assess student mental health and the current notes inputted by the counselor to give feedback about the student's mental health.
+A web application that stores student information and gives personalized mental health assessments for each student. The Application stores students' mental health history and uses prompt engineering to assess notes about the student inputted by the counselor, giving feedback about the student's mental health condition. The application contains the endpoint for ChatGPT 3.5. Chat GPT 3.5 uses student information in the database to assess student mental health and the current notes placed in by the counselor to give feedback about the student's mental health.
 
 
 
