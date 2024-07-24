@@ -8,7 +8,7 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <h3 align="center">Care Nest</h3>
+  <h2 align="center">Care Nest Mental Health App</h2>
   <p align="center">
     An intelligent Web Application for Mental Health Assessment
     <br />
@@ -192,6 +192,14 @@ Project Link: [https://github.com/wendytim5/counsellor_webapp.git/](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
+[contributors-url]: https://github.com/chinweibegbu/ashesi-cv-builder/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
+[forks-url]: https://github.com/chinweibegbu/ashesi-cv-builder/network/members
+[stars-shield]: https://img.shields.io/github/stars/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
+[stars-url]: https://github.com/chinweibegbu/ashesi-cv-builder/stargazers
+[issues-shield]: https://img.shields.io/github/issues/chinweibegbu/ashesi-cv-builder.svg?style=for-the-badge
+[issues-url]: https://github.com/chinweibegbu/ashesi-cv-builder/issues
 [issues-url]: https://github.com/wendytim5/counsellor_webapp.git/issues
 [linkedin-url]: https://www.linkedin.com/in/wendy-pasiah/
 [product-screenshot]: images/screenshot.png
