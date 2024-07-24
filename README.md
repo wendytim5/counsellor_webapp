@@ -154,14 +154,14 @@ Alternatively, you can open an [Issue](https://github.com/wendytim5/counsellor_w
 
 
 #### View Student
-- [x] List of students:
+- [x] Student information (Information for each student):
   - [x] StudentID
   - [X] First Name
   - [x] Last Name
   - [x] Email
   - [x] Country
      
-### Student Profile (Click on student ID)    
+#### Student Profile (Click on student ID)    
 - [x] Notes about student
   - [x] Notes List (contains notes placed by the counselor)
   - [x] Note input (Connecting to ChatGPT 3.5 to assess the notes placed by the counselor)
