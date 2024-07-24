@@ -94,7 +94,7 @@ Figma file:  https://www.figma.com/design/rl3RKTUTxP0GNYaIRwGu33/Untitled?node-i
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running, follow these simple steps. The code was built using GitHub codespace as the virtual environment. Make sure to make the ports public.
+To get a local copy up and running, follow these simple steps. The code was built using GitHub codespace as the virtual environment. Since the front end and the APIs have been completely separated and placed in different folders. Make sure to make the ports public especially that of the backend.
 
 ### Prerequisites
 
