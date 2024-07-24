@@ -70,7 +70,9 @@ function LoginPage() {
         {message && <p className="message">{message}</p>} {/* Display message */}
       </div>
       <div className="login-i">
+
         <img src={loginandregister} alt="Signup Image" className="background-i" />
+        
       </div>
     </div>
   );

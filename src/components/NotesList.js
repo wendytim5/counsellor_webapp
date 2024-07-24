@@ -70,7 +70,9 @@ function NotesList({ studentId, notes, setNotes }) {
                   value={editText}
                   onChange={(e) => setEditText(e.target.value)} />
               ) : (
+
                 <span>{note.content}</span>
+                
               )}
               <div className="note-actions">
                 {editingNoteId === note._id ? (
@@ -89,7 +91,7 @@ function NotesList({ studentId, notes, setNotes }) {
           </div><div className="model-response" background-color="white" >
               {noteResponses[note._id] && ( // Display model response if available
                 <div background-color="white">
-                  <h3></h3>
+                 
                   <p>{noteResponses[note._id].content}</p>
                 </div>
 

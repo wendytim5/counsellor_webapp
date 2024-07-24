@@ -22,7 +22,7 @@ const Header = () => {
         </Link>
         <Link to="/">
           <button className="singout-btn">Signout
-          <FontAwesomeIcon icon={faArrowRight} className="dropdown-icon" />
+            <FontAwesomeIcon icon={faArrowRight} className="dropdown-icon" />
           </button>
         </Link>
       </nav>
