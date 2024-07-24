@@ -76,8 +76,7 @@ Figma file:  https://www.figma.com/design/rl3RKTUTxP0GNYaIRwGu33/Untitled?node-i
 
 ### Built With
 
-* [![HTML][HTML]][HTML-url]
-* [![CSS][CSS]][CSS-url]
+
 * [![JavaScript][JavaScript]][JavaScript-url]
 * [![Node][Node]][Node-url]
 * [![React][React.js]][React-url]
