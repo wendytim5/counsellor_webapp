@@ -69,9 +69,8 @@ A web application that stores student information and gives personalized mental 
 Discoveries and Observations:
 * The counselor in Ashesi does not have an app where the counselor can store student information and history.
 * Often, the counselor would have to write down student information in the notebook and sometimes misplace the notes.
-* Most allow the counselor to register and login.
 * Counselor often forget to use student prior mental health history to give mental health assessment.
-* Most allow the creation of student information.
+
 
 #### UI Design
 Figma file:  https://www.figma.com/design/rl3RKTUTxP0GNYaIRwGu33/Untitled?node-id=0-1&m=dev
