@@ -2,18 +2,15 @@
 
 
 <!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <h3 align="center">Ashesi CV Builder</h3>
+  <h3 align="center">Care Nest</h3>
   <p align="center">
-    An intuitive CV builder for Ashesi University students
+    An intelligent Web Application for Mental Health Assessment
     <br />
     <br />
     <a href="https://github.com/wendytim5/counsellor_webapp.git">Explore Docs</a>
