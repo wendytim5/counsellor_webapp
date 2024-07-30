@@ -33,8 +33,8 @@ mongoose.connect('mongodb+srv://wendypasiah:wendytima@cluster0.enfmewu.mongodb.n
 // POST a new user
 app.post('/api/users', async (req, res) => {
   try {
-    const { first_name, last_name, email, country } = req.body;
-    const newUser = new User({ first_name, last_name, email, country });
+    const { first_name, last_name, email, country, age, year_group } = req.body;
+    const newUser = new User({ first_name, last_name, email, country,age, year_group });
     const savedUser = await newUser.save();
     res.status(201).json(savedUser);
   } catch (err) {
@@ -193,52 +193,57 @@ app.delete('/api/student/:id/notes/:noteId', async (req, res) => {
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 // Function to assess mental health
-async function assessMentalHealth(notes) {
-    const prompt = `Patient notes:\n${notes}\n Based on the patients notes detrmine if the patient possess any traits of mental illnesses such as anxiety disorders, depression disorders, bipolar disorders, personality disorders, schizophrenia disorders, eating disorders, and personality disorders. :\n`;
+// Function to assess mental health
+async function assessMentalHealth(studentName, notes) {
+  const prompt = `Based on the following notes for ${studentName}, what mental health issues might the student be experiencing?\n\n${notes}\n\nSuggest questions that a counselor can ask to assess the student's anxiety levels further.\nProvide feedback on the counselor's notes regarding the student's progress.`;
 
-    try {
-        const response = await openai.chat.completions.create({
-          model: "gpt-3.5-turbo",
-            messages: [{ role: "assistant", content: prompt }],
-            max_tokens: 150,
-            temperature: 0.7,
-            top_p: 0.9,
-            n: 1,
-            stop: ['\n']
-        });
+  try {
+      const response = await openai.chat.completions.create({
+          model: "gpt-4",
+          messages: [{ role: "system", content: "You are a mental health assessment assistant." }, { role: "user", content: prompt }],
+          max_tokens: 150,
+          temperature: 0.7,
+          top_p: 0.9,
+          n: 1,
+          stop: ['\n']
+      });
 
-        return response.choices[0];
-    } catch (error) {
-        console.error("Error assessing mental health:", error);
-        throw error;
-    }
+      return response.choices[0].message.content.trim();
+  } catch (error) {
+      console.error("Error assessing mental health:", error);
+      throw error;
+  }
 }
 
 // Route to assess student's mental health
 app.post('/assess', async (req, res) => {
-    const { student_id, notes } = req.body;
+  const { student_id, notes } = req.body;
 
-    try {
-        // Fetch previous notes from the database
-        const previousNotes = await Note.findOne({ student_id });
-        let allNotes = notes;
-        if (previousNotes) {
-            allNotes = previousNotes.notes + " " + notes;
-        }
+  try {
+      // Fetch previous notes from the database
+      const student = await User.findById(student_id);
+      if (!student) {
+          return res.status(404).json({ msg: 'Student not found' });
+      }
 
-        // Assess mental health using OpenAI API
-        const assessment = await assessMentalHealth(allNotes);
+      const previousNotes = await Note.find({ studentId: student_id });
+      let allNotes = notes;
+      if (previousNotes.length > 0) {
+          allNotes = previousNotes.map(note => note.content).join(' ') + " " + notes;
+      }
 
-        if (assessment) {
-            res.json({ assessment });
-        } else {
-            res.status(500).json({ error: "Failed to assess mental health status." });
-        }
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
+      // Assess mental health using OpenAI API
+      const assessment = await assessMentalHealth(student.first_name, allNotes);
+
+      if (assessment) {
+          res.json({ assessment });
+      } else {
+          res.status(500).json({ error: "Failed to assess mental health status." });
+      }
+  } catch (error) {
+      res.status(500).json({ error: error.message });
+  }
 });
-
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

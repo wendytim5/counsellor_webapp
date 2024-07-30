@@ -11,6 +11,8 @@ const StudentProfileForm = () => {
     last_name: '',
     email: '',
     country: '',
+    age:'',
+    year_group:''
   });
 
   const [successMessage, setSuccessMessage] = useState('');
@@ -95,6 +97,28 @@ const StudentProfileForm = () => {
             id="country"
             name="country"
             value={formData.country}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="age">Age</label>
+          <input
+            type="text"
+            id="age"
+            name="age"
+            value={formData.age}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="year_group">Year Group</label>
+          <input
+            type="text"
+            id="year_group"
+            name="year_group"
+            value={formData.year_group}
             onChange={handleChange}
             required
           />

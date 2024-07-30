@@ -16,7 +16,7 @@ const Dashboard =() => {
       <div className="dashboard-item">
         <Link to={`/student/${id}/notes`} className="sidebar-item">
         <FaStickyNote className="material-icons" />
-            Notes about students
+            Notes about student
         </Link>
       </div>
       <div className="dashboard-item">
