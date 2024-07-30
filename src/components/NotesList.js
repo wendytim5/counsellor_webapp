@@ -9,6 +9,8 @@ function NotesList({ studentId, notes, setNotes }) {
   const [editText, setEditText] = useState('');
   const [noteResponses, setNoteResponses] = useState({});
 
+
+
   useEffect(() => {
     // Function to fetch model responses for each note
     const fetchNoteResponses = async () => {
@@ -20,7 +22,7 @@ function NotesList({ studentId, notes, setNotes }) {
               student_id: studentId,
               notes: note.content // Send each note content for assessment
             });
-            responses[note._id] = response.data.assessment.message;
+            responses[note._id] = response.data.assessment;
           })
         );
         setNoteResponses(responses);
@@ -32,6 +34,8 @@ function NotesList({ studentId, notes, setNotes }) {
     fetchNoteResponses();
   }, [studentId, notes]); // Fetch responses whenever studentId or notes change
 
+
+
   const handleDelete = async (noteId) => {
     try {
       await axios.delete(`https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/api/student/${studentId}/notes/${noteId}`);
@@ -41,10 +45,14 @@ function NotesList({ studentId, notes, setNotes }) {
     }
   };
 
+
+
   const handleEdit = (noteId, content) => {
     setEditingNoteId(noteId);
     setEditText(content);
   };
+
+
 
   const handleSave = async (noteId) => {
     try {
@@ -58,6 +66,7 @@ function NotesList({ studentId, notes, setNotes }) {
       console.error('Error saving note:', err);
     }
   };
+
 
   return (
     <div className="note-list">
@@ -92,7 +101,7 @@ function NotesList({ studentId, notes, setNotes }) {
               {noteResponses[note._id] && ( // Display model response if available
                 <div background-color="white">
                  
-                  <p>{noteResponses[note._id].content}</p>
+                  <p>{noteResponses[note._id]}</p>
                 </div>
 
               )}

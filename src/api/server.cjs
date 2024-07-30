@@ -30,21 +30,24 @@ mongoose.connect('mongodb+srv://wendypasiah:wendytima@cluster0.enfmewu.mongodb.n
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.error('Error connecting to MongoDB:', err));
 
-// POST a new user
+
+
 app.post('/api/users', async (req, res) => {
   try {
     const { first_name, last_name, email, country, age, year_group } = req.body;
-    const newUser = new User({ first_name, last_name, email, country,age, year_group });
+
+    // Validate that all required fields are present
+    if (!first_name || !last_name || !email || !country || !age || !year_group) {
+      return res.status(400).json({ message: 'All fields are required.' });
+    }
+
+    const newUser = new User({ first_name, last_name, email, country, age, year_group });
     const savedUser = await newUser.save();
     res.status(201).json(savedUser);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
 });
-
-
-
-
 
 
 
@@ -64,6 +67,9 @@ app.post('/register', async (req, res) => {
     res.status(500).json({ message: 'There was an error registering!' });
   }
 });
+
+
+
 
 // Login Route
 app.post('/login', async (req, res) => {
@@ -89,9 +95,6 @@ app.post('/login', async (req, res) => {
 });
 
 
-
-
-
 app.get('/api/students', async (req, res) => {
   try {
     const users = await User.find();
@@ -115,6 +118,10 @@ app.get('/api/student/:id', async (req, res) => {
   }
 });
 
+
+
+
+
 // Add a note for a student
 app.post('/api/student/:id/notes', async (req, res) => {
   const { id } = req.params;
@@ -133,17 +140,26 @@ app.post('/api/student/:id/notes', async (req, res) => {
 
     const savedNote = await newNote.save();
 
-    // Ensure student.notes is initialized as an array if not already
-    student.notes = student.notes || [];
+    if (!Array.isArray(student.notes)) {
+      student.notes = [];
+    }
+
     student.notes.push(savedNote._id);
     await student.save();
 
     res.json(savedNote);
   } catch (err) {
     console.error('Error saving note:', err);
-    res.status(500).send('Server error');
+    res.status(500).json({ error: 'Server error' }); // Return a specific error message
   }
 });
+
+
+
+
+
+
+
 
 // Get notes for a student
 app.get('/api/student/:id/notes', async (req, res) => {

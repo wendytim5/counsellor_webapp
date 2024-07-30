@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema({
   email: { type: String, required: true },
   country: { type: String, required: true },
   age: { type: String, required: true },
-  year_group: { type: String, required: true }
+  year_group: { type: String, required: true },
 });
 
 module.exports = mongoose.model('User', UserSchema);
