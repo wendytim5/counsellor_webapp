@@ -201,7 +201,7 @@ async function assessMentalHealth(studentName, notes) {
       const response = await openai.chat.completions.create({
           model: "gpt-4",
           messages: [{ role: "system", content: "You are a mental health assessment assistant." }, { role: "user", content: prompt }],
-          max_tokens: 150,
+          max_tokens: 250,
           temperature: 0.7,
           top_p: 0.9,
           n: 1,
