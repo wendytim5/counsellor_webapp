@@ -192,7 +192,7 @@ app.delete('/api/student/:id/notes/:noteId', async (req, res) => {
 // Initialize OpenAI API
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// Function to assess mental health
+
 // Function to assess mental health
 async function assessMentalHealth(studentName, notes) {
   const prompt = `Based on the following notes for ${studentName}, what mental health issues might the student be experiencing?\n\n${notes}\n\nSuggest questions that a counselor can ask to assess the student's anxiety levels further.\nProvide feedback on the counselor's notes regarding the student's progress.`;
