@@ -14,7 +14,7 @@ const Notes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const response = await axios.get(`https://musical-space-goldfish-jj4997jgr6jxh567w-5000.app.github.dev/api/student/${id}/notes`);
+        const response = await axios.get(`https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/api/student/${id}/notes`);
         setNotes(response.data);
       } catch (err) {
         console.error('Error fetching notes:', err);
@@ -26,7 +26,7 @@ const Notes = () => {
 
   const addNote = async (studentId, content) => {
     try {
-      const response = await axios.post(`https://musical-space-goldfish-jj4997jgr6jxh567w-5000.app.github.dev/api/student/${studentId}/notes`, { content });
+      const response = await axios.post(`https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/api/student/${studentId}/notes`, { content });
       setNotes(prevNotes => [...prevNotes, response.data]);
     } catch (err) {
       console.error('Error adding note:', err);

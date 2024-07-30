@@ -16,7 +16,7 @@ function NotesList({ studentId, notes, setNotes }) {
         const responses = {};
         await Promise.all(
           notes.map(async (note) => {
-            const response = await axios.post('https://musical-space-goldfish-jj4997jgr6jxh567w-5000.app.github.dev/assess', {
+            const response = await axios.post('https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/assess', {
               student_id: studentId,
               notes: note.content // Send each note content for assessment
             });
@@ -34,7 +34,7 @@ function NotesList({ studentId, notes, setNotes }) {
 
   const handleDelete = async (noteId) => {
     try {
-      await axios.delete(`https://musical-space-goldfish-jj4997jgr6jxh567w-5000.app.github.dev/api/student/${studentId}/notes/${noteId}`);
+      await axios.delete(`https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/api/student/${studentId}/notes/${noteId}`);
       setNotes(notes.filter(note => note._id !== noteId));
     } catch (err) {
       console.error('Error deleting note:', err);
@@ -48,7 +48,7 @@ function NotesList({ studentId, notes, setNotes }) {
 
   const handleSave = async (noteId) => {
     try {
-      const response = await axios.put(`https://musical-space-goldfish-jj4997jgr6jxh567w-5000.app.github.dev/api/student/${studentId}/notes/${noteId}`, { content: editText });
+      const response = await axios.put(`https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/api/student/${studentId}/notes/${noteId}`, { content: editText });
       const updatedNote = response.data;
 
       setNotes(notes.map(note => (note._id === noteId ? updatedNote : note)));

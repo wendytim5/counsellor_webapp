@@ -12,7 +12,7 @@ const StudentsTable = () => {
     // Fetch students data from the backend
     const fetchStudents = async () => {
       try {
-        const response = await axios.get('https://musical-space-goldfish-jj4997jgr6jxh567w-5000.app.github.dev/api/students');
+        const response = await axios.get('https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/api/students');
         setStudents(response.data);
       } catch (err) {
         console.error('Error fetching students:', err);

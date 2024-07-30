@@ -22,7 +22,7 @@ function RegisterPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('https://musical-space-goldfish-jj4997jgr6jxh567w-5000.app.github.dev/register', formData)
+    axios.post('https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/register', formData)
       .then(response => {
         setMessage('User registered successfully');
       })

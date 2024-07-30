@@ -12,7 +12,7 @@ const StudentProfile = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`https://musical-space-goldfish-jj4997jgr6jxh567w-5000.app.github.dev/api/student/${id}`);
+        const response = await axios.get(`https://musical-space-goldfish-jj4997jgr6jxh567w-3009.app.github.dev/api/student/${id}`);
         setStudent(response.data);
       } catch (error) {
         console.error('Error fetching student data:', error);
