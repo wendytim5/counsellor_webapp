@@ -3,9 +3,8 @@ import React from 'react';
 import '../styles/dashboard.css';
 import Header from '../components/dashboard_header';
 import Sidebar from '../components/sidebar';
-
+import WordCloudComponent from '../components/WordCoud';
 import Frame from '../images/Frame.png';
-import Rectangle from '../images/Rectangle.png';
 import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
@@ -26,7 +25,7 @@ const Dashboard = () => {
         </div>
         
         <div className="main-right">
-          <img src={Rectangle} alt="Mental Health" className="background-image" />
+            <WordCloudComponent />
         </div>
     </div>
   </div>

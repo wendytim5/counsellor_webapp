@@ -10,8 +10,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const app = express();
 const OpenAI = require('openai');
-const secretKey = 'wendytima'; // Replace with a strong secret key
 
+const secretKey = 'wendytima'; // Replace with a strong secret key
 
 const PORT = process.env.PORT || 3009
 ;
@@ -29,6 +29,20 @@ mongoose.connect('mongodb+srv://wendypasiah:wendytima@cluster0.enfmewu.mongodb.n
 })
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.error('Error connecting to MongoDB:', err));
+
+
+
+// Fetch all notes
+app.get('/all', async (req, res) => {
+  try {
+    const notes = await Note.find();
+    res.json(notes);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+
 
 
 
@@ -211,16 +225,17 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 // Function to assess mental health
 async function assessMentalHealth(studentName, notes) {
-  const prompt = `Based on the following notes for ${studentName}, what mental health issues might the student be experiencing?\n\n${notes}\n\nSuggest questions that a counselor can ask to assess the student's anxiety levels further.\nProvide feedback on the counselor's notes regarding the student's progress.`;
+  const prompt = `You are an expert in assessing mental health, you are kind and considerate. You are a helpful assistant, so use this student's ${studentName} \n\n${notes}\n\n to assess what mental health disease ${studentName}  might have. Let us think it through step by step.
+  Do not say that you can not help beacause you are an AI`;
 
   try {
       const response = await openai.chat.completions.create({
           model: "gpt-4",
-          messages: [{ role: "system", content: "You are a mental health assessment assistant." }, { role: "user", content: prompt }],
-          max_tokens: 250,
+          messages: [{ role: "system", content: "You are a mental health assessment expert." }, { role: "user", content: prompt }],
+          max_tokens: 500,
           temperature: 0.7,
           top_p: 0.9,
-          n: 1,
+          n: 3,
           stop: ['\n']
       });
 
@@ -260,6 +275,12 @@ app.post('/assess', async (req, res) => {
       res.status(500).json({ error: error.message });
   }
 });
+
+
+
+
+
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

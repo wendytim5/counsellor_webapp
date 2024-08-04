@@ -11,6 +11,7 @@ import ViewStudent from './pages/ViewStudent';
 import HomePage from './pages/HomePage';
 import Notes from './components/Notes';
 import StudentProfile from './pages/StudentProfile';
+import WordCloud from './components/WordCoud';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/student/:id" element={<HomePage/>} />
           <Route path="/student/:id/notes" element={<Notes/>} />
           <Route path="/student/:id/profile" element={<StudentProfile/>} />
+          <Route path="/wordcloud" element={<WordCloud/>} />
         </Routes>
       </div>
     </Router>
